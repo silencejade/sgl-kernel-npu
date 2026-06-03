@@ -24,7 +24,7 @@ from sgl_kernel_npu.fla.wy_fast import recompute_w_u_fwd_npu as recompute_w_u_fw
 
 
 def _use_triton_backend():
-    return os.getenv("GDN_ATTN_BACKEND_TRITON", "0") == "1"
+    return os.getenv("GDN_ATTN_BACKEND_TRITON", "1") == "1"
 
 
 def fast_inv_tril(A: torch.Tensor):
